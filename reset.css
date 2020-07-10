@@ -1,0 +1,11 @@
+/* Resets */
+
+* {
+    box-sizing: border-box;
+}
+
+nav ul, .login ul, .register ul, .contact_form ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
