@@ -54,29 +54,30 @@
                             <legend>Please register</legend>
                             <ul>
                                 <li>
-                                    <label for="first-username">First Name</label>
+                                    <label class="required" for="first-username">First Name </label>
                                     <input type="text" name="firstname" id="first-username" required>
                                 </li>
                                 <li>
-                                    <label for="last-username">Last Name</label>
+                                    <label class="required" for="last-username">Last Name </label>
                                     <input type="text" name="lastname" id="last-username" required>
                                 </li>
                                 <li>
-                                    <label for="emailaddr">Email</label>
+                                    <label class="required" for="emailaddr">Email </label>
                                     <input type="email" name="email" id="emailaddr" required>
                                 </li>
                                 <li>
-                                    <label for="pwd">Password</label>
-                                    <input type="password" name="password" id="pwd" required>
+                                    <label class="required" for="pwd">Password </label>
+                                    <input type="password" name="password" id="pwd" required minlength="8">
+                                    <p>Password should have minimum 8 characters</p>
                                 </li>
                                 <li>
-                                    <label for="conf_pwd">Confirm Password</label>
-                                    <input type="password" name="password-confirm" id="conf_pwd" required>
+                                    <label class="required" for="conf_pwd">Confirm Password </label>
+                                    <input class="psw-hint" type="password" name="password-confirm" id="conf_pwd" required> 
                                 </li>
                                 <li class="subscribe">
                                     <input class="subscribe-input" type="checkbox" name="subscribe" id="suscribe_news">
-                                    <label class="subscribe-label" for="suscribe_news">Subscribe to our
-                                        newsletter</label>
+                                    <label class="required" class="subscribe-label" for="suscribe_news" required>Subscribe to our
+                                        newsletter </label>
                                 </li>
                                 <li>
                                     <button type="submit">Register</button>

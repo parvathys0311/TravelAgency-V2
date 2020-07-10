@@ -90,3 +90,10 @@ nav a{
 
     color: rgb(134, 28, 134);
 }
+
+
+.fieldset_register p{
+    text-align: right;
+    font-size: 12px;
+    font-weight: normal;
+}
