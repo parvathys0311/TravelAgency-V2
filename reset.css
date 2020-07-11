@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-nav ul, .login ul, .register ul, .contact_form ul {
+nav ul, .login ul, .register ul, .contact_form ul, .img-container ul, .img-container li {
     list-style-type: none;
     padding-left: 0;
 }
