@@ -83,8 +83,14 @@ nav a{
     font-weight: bold;
 }
 
+.register label,
+.login label {
+    font-size: 14px;
+    line-height: 25px;
+}
 
-.register p, .login p {
+
+.p-default {
     font-size: 25px;
     font-weight: bold;
 
@@ -92,8 +98,10 @@ nav a{
 }
 
 
-.fieldset_register p{
-    text-align: right;
+.pwd-message {
+    text-align: end;
     font-size: 12px;
-    font-weight: normal;
+    line-height: 22px;
+    color: grey;
+    
 }

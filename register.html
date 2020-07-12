@@ -46,7 +46,7 @@
             <main>
                 <!-- main content includes a registration form in the page center -->
                 <div class="register">
-                    <p>Let's explore the world together. Join the Tribe.
+                    <p class="p-default">Let's explore the world together. Join the Tribe.
                     <p>
                     <form action="#" method="POST">
                         <!-- form fields are within a fieldset -->
@@ -55,24 +55,24 @@
                             <ul>
                                 <li>
                                     <label class="required" for="first-username">First Name </label>
-                                    <input type="text" name="firstname" id="first-username" required>
+                                    <input class="register-input" type="text" name="firstname" id="first-username" required>
                                 </li>
                                 <li>
                                     <label class="required" for="last-username">Last Name </label>
-                                    <input type="text" name="lastname" id="last-username" required>
+                                    <input class="register-input" type="text" name="lastname" id="last-username" required>
                                 </li>
                                 <li>
                                     <label class="required" for="emailaddr">Email </label>
-                                    <input type="email" name="email" id="emailaddr" required>
+                                    <input class="register-input" type="email" name="email" id="emailaddr" required>
                                 </li>
                                 <li>
                                     <label class="required" for="pwd">Password </label>
-                                    <input type="password" name="password" id="pwd" required minlength="8">
-                                    <p>Password should have minimum 8 characters</p>
+                                    <input class="register-input" type="password" name="password" id="pwd" required minlength="8">
+                                    <p class="pwd-message">Password requires minimum 8 characters</p>
                                 </li>
                                 <li>
                                     <label class="required" for="conf_pwd">Confirm Password </label>
-                                    <input class="psw-hint" type="password" name="password-confirm" id="conf_pwd" required> 
+                                    <input class="psw-hint register-input" type="password" name="password-confirm" id="conf_pwd" required> 
                                 </li>
                                 <li class="subscribe">
                                     <input class="subscribe-input" type="checkbox" name="subscribe" id="suscribe_news">

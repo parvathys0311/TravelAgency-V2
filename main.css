@@ -281,7 +281,7 @@ nav a:active {
 
 /* default settings for register & login page */
 .register, .login {
-    margin-top:5%;
+    margin-top:3%;
     padding: 1em;
     padding-bottom: 4em;
     
@@ -313,37 +313,47 @@ nav a:active {
 
     /* li is a flex with label & input as flex items */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     
-    align-items: center;
+    padding-bottom: 0.5em;
+    
 }
 
 /* defining label & input styles  */
 
-.register input, .login input {
+.register-input, .login input {
     flex: auto;
     background: transparent;
 }
 .register label, .login label{
-    /* flex: 1 0 120px; */
+    flex: 1 0 80px;
     margin-right: 50px;
 }
 
+
 .subscribe {
-    padding: 1em;
-    text-align: center; 
-
-    flex: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.subscribe-label{
-    flex: 1 0 120px;
-}
+/* .subscribe { */
+    /* padding: 1em;
+    text-align: center;  */
 
-.subscribe input {
-    margin-right: 0.5em;
-}
+    /* flex: 1; */
+/* } */
+
+/* .subscribe-label{
+    /* flex: 1; */
+    /* flex: 1 0 120px; */
+/* }  */
+
+/* .subscribe-input {
+    
+    /* margin-right: 0.5em; */
+/* }  */
 
 /* styling for button in register & login page */
 .register button, .login button {
@@ -368,3 +378,8 @@ nav a:active {
 .psw-hint::after{
     content: "Minimum 8 characters required";
 }
+
+input:invalid {
+    border: 2px dotted red;
+    background-image: linear-gradient(white,rgb(219, 219, 189));
+  }

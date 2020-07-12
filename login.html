@@ -46,10 +46,10 @@
             <main>
                 <!-- main content includes a login form in the page center -->
                 <div class="login">
-                    <p>Welcome Back. It's time to travel.
+                    <p class="p-default">Welcome Back. It's time to travel.
                     <p>
                     <form action="#" method="POST">
-                        <!-- form fileds are within a fieldset -->
+                        <!-- form fields are within a fieldset -->
                         <fieldset class="fieldset_login">
                             <legend>Please Login</legend>
                             <ul>
@@ -59,7 +59,8 @@
                                 </li>
                                 <li>
                                     <label for="pwd"> Password </label>
-                                    <input type="password" name="password" id="pwd" required>
+                                    <input type="password" name="password" id="pwd" required minlength="8">
+                                    <p class="pwd-message">Password requires minimum 8 characters</p>
                                 </li>
                                 <li>
                                     <button type="submit">Continue</button>

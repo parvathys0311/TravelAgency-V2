@@ -1,4 +1,5 @@
 
+// gallery in index page //
 const imgList = [
   { id: 317, alt: '', src: 'https://picsum.photos/id/317/200/200', description: 'Vietnam' , link : 'https://i.picsum.photos/id/317/1935/1089.jpg?hmac=veRodF8Ti5rEi0KWd2JMP9fUYm8jtTlq2zdmLCUM0uc'},
   { id: 318, alt: '', src: 'https://picsum.photos/id/318/200/200', description: 'Paris' , link : 'https://i.picsum.photos/id/318/3264/2448.jpg?hmac=zkYZ29-Ww_A4O_kZ3gjlpFQuEYELWgeM6aI_CMG01BU'},
@@ -23,5 +24,14 @@ imgList.forEach(function (item) {
 image.innerHTML = imgtemplate
 // console.log(image.innerHTML)
 
+// register and login form //
 
+// const form = document.querySelector('form');
+
+// form.addEventListener('submit', function f(event){
+//   event.preventDefault();
+//   if (form.classList.contains('.invalid')) {
+//     form.classList.add("")
+//   }
+// });
 
