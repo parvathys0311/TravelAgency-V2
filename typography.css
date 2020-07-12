@@ -11,7 +11,7 @@ p, .contact_form label, fieldset {
 h1,
 h2,
 h3,
-h4, nav a, .button, button {
+h4, nav a, .button, .button-default {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-variant: small-caps;
     font-weight: bold;

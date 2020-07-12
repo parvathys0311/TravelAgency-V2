@@ -1,3 +1,15 @@
+// hide menu bar in mobile view
+
+const button = document.querySelector('.menu-btn');
+const menu = document.querySelector('nav ul');
+
+button.addEventListener('click', function(){
+  console.log('clicked')
+  menu.classList.toggle('visible');
+
+});
+
+
 
 // gallery in index page //
 const imgList = [

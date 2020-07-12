@@ -67,28 +67,45 @@ footer {
     padding-left: 0.5em;
 }
 
-/* nav section ---> 2nd flex item of flexbox "main-header"  */
+/* hide menu on mobile view */
 nav ul{
-    margin:0;
+    display: none;
+}
+
+.visible {
+    display:block;
+}
+
+@media (orientation: landscape) {
+    nav ul{
+        margin:0;
+        
+        /* define an inner flex with li as flex items  */
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0.5em; 
     
-    /* define an inner flex with li as flex items  */
-    display:flex;
-    flex-wrap: wrap;
-    padding: 0.5em; 
+        /* positioning ul */
+        justify-content: end; 
+        align-items: center;
+    }
+    
+    /* nav  li ---> flex items of flexbox "nav ul"  */
+    nav li{
+        padding:0.5em;
+    }
+    
+    nav a{
+        display: block;
+    }
 
-    /* positioning ul */
-    justify-content: end; 
-    align-items: center;
+    nav button {
+        display: none;
+    }
 }
 
-/* nav  li ---> flex items of flexbox "nav ul"  */
-nav li{
-    padding:0.5em;
-}
+/* nav section ---> 2nd flex item of flexbox "main-header"  */
 
-nav a{
-    display: block;
-}
 
 /* <------------- nav hover & click styles --------> */
 nav a:hover {
@@ -125,7 +142,7 @@ nav a:active {
 }
 
 /* default button style adopted */
-.button {
+.button-default {
     background: linear-gradient(45deg, white 10%, yellow 90%);
     
     border: 1px solid greenyellow; 
