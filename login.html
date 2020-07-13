@@ -2,79 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Expert</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Expert</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/typography.css">
 
 </head>
 
 <body>
-    <!-- wrap the whole page inside page-container -->
-    <div class="page-container">
-        <!-- wrap the content  inside content-container with the exception of footer -->
-        <div class="content-container">
-            <header>
-                <!-- common header for all pages -->
-                <div class="main-header">
-                    <div class="logo-title">
-                        <a href="index.html"><i class="fa fa-ravelry logo"></i></a>
-                        <a href="index.html">
-                            <h2> Travel Experts</h2>
-                        </a>
-                    </div>
-                    <!-- navigation items-->
-                    <nav>
-                        <ul>
-                            <li><a href="#gallery">Destinations</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                            <li><a class="current" href="login.html">Login</a></li>
-                            <li><a href="register.html">Sign Up</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- end of header section -->
-            </header>
-
-            <main>
-                <!-- main content includes a login form in the page center -->
-                <div class="login">
-                    <p class="p-default">Welcome Back. It's time to travel.
-                    <p>
-                    <form action="#" method="POST">
-                        <!-- form fields are within a fieldset -->
-                        <fieldset class="fieldset_login">
-                            <legend>Please Login</legend>
-                            <ul>
-                                <li>
-                                    <label for="emailaddr"> Email </label>
-                                    <input type="email" name="email" id="emailaddr" required>
-                                </li>
-                                <li>
-                                    <label for="pwd"> Password </label>
-                                    <input type="password" name="password" id="pwd" required minlength="8">
-                                    <p class="pwd-message">Password requires minimum 8 characters</p>
-                                </li>
-                                <li>
-                                    <button type="submit">Continue</button>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </form>
-                </div>
-            </main>
+  <!-- wrap the whole page inside page-container -->
+  <div class="page-container">
+    <!-- wrap the content  inside content-container with the exception of footer -->
+    <div class="content-container">
+      <header>
+        <!-- common header for all pages -->
+        <div class="main-header">
+          <div class="logo-title">
+            <a href="index.html"><i class="fa fa-ravelry logo"></i></a>
+            <a href="index.html">
+              <h2> Travel Experts</h2>
+            </a>
+          </div>
+          <!-- navigation items-->
+          <nav>
+            <ul>
+              <li><a href="index.html#gallery">Destinations</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+              <li><a class="current" href="login.html">Login</a></li>
+              <li><a href="register.html">Sign Up</a></li>
+            </ul>
+          </nav>
         </div>
-        <footer>
-            &copy; 2020 - Parvathy Sudhakaran
-        </footer>
+        <!-- end of header section -->
+      </header>
+
+      <main>
+        <!-- main content includes a login form in the page center -->
+        <div class="login">
+          <p class="p-default">Welcome Back. It's time to travel.
+          <p>
+          <form action="#" method="POST">
+            <!-- form fields are within a fieldset -->
+            <fieldset class="fieldset_login">
+              <legend>Please Login</legend>
+              <ul>
+                <li>
+                  <label class="required" for="emailaddr"> Email </label>
+                  <input type="email" name="email" id="emailaddr" required>
+                </li>
+                <li>
+                  <label class="required" for="pwd"> Password </label>
+                  <input type="password" name="password" id="pwd" required minlength="8">
+                  <p class="pwd-message">Password requires minimum 8 characters</p>
+                </li>
+                <li>
+                  <button class="button-default" type="submit">Continue</button>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </main>
     </div>
+    <footer>
+      &copy; 2020 - Parvathy Sudhakaran
+    </footer>
+  </div>
 </body>
 
 </html>
